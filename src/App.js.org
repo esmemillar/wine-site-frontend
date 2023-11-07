@@ -1,0 +1,58 @@
+import './App.css';
+//import { useEffect, useState } from "react";
+
+import styled from "styled-components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Header from "./Header";
+import Home from "./Home";
+import Wines from "./Wines";
+import Producers from "./Producers";
+
+import WineDetails from './WineDetails';
+import ProducerDetails from './ProducerDetails';
+// import Grapes from './Grapes';
+// import Regions from './Regions';
+// import BrowseByStyle from './BrowseByStyle';
+import BrowseByYear from './BrowseByYear';
+import Favorites from './Favorites';
+
+
+import GlobalStyles from "./GlobalStyles";
+// import Login from './Login';
+// import CreateAccount from './CreateAccount';
+
+const App = () => {
+
+
+  return (
+      <BrowserRouter>
+      <GlobalStyles />
+          <Header/>
+          <Wrapper>
+              <Routes>
+                  <Route path="/" element={<Home/>} />
+                  <Route path="/wines" element={<Wines/>} />
+                  <Route path="/wines/:wineId" element={<WineDetails/>} />
+                  <Route path="/producers" element={<Producers />} />
+                  <Route path="/producers/:producerId" element={<ProducerDetails/>} />
+                  {/* <Route path="/grapes" element={<Grapes/>} /> */}
+                  {/* <Route path="/regions/:region" element={<Regions/>} /> */}
+                  {/* <Route path="/colour" element={<BrowseByStyle/>} /> */}
+                  <Route path="/year" element={<BrowseByYear/>} />
+                  <Route path="/favorites/:userId" element={<Favorites />} />
+
+                  <Route path="*" element={<h1>404: Oops!</h1>} />
+              </Routes>
+          </Wrapper>
+      </BrowserRouter>
+  );
+};
+
+
+const Wrapper = styled.div`
+  margin: auto;
+`;
+
+export default App;
+
