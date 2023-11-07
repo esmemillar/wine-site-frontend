@@ -32,6 +32,9 @@
   "engines": {
     "node": "20.x"
   },
+  "devServer": {
+    "allowedHosts": "all"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
