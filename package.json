@@ -29,6 +29,9 @@
       "react-app/jest"
     ]
   },
+  "engines": {
+    "node": "20.x"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -41,7 +44,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/",
+  "homepage": "https//wine-site-frontend-production.up.railway.app",
   "proxy": "https://wine-site-backend-production.up.railway.app",
   "displayName": "final"
 }
