@@ -41,6 +41,9 @@
       "last 1 safari version"
     ]
   },
+  "engines": {
+    "node": "20.x.x"
+  },
   "homepage": "https//wine-site-frontend-production.up.railway.app",
   "proxy": "https://wine-site-backend-production.up.railway.app",
   "displayName": "final"
