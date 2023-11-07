@@ -12,11 +12,6 @@ const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 const ghrepo = process.env.REACT_APP_GITHUB_REPO;
 
-{/*
-        authorizationParams={{ redirect_uri: window.location.origin }} >
-        authorizationParams={{ redirect_uri: window.location.origin + '/' + ghrepo + '/' }} >
-*/}
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
